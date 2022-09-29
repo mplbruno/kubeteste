@@ -11,12 +11,12 @@ spec:
     spec:
       containers:
       - name: api-laboratorio
-        image: mplbruno/apiadministradores
+        image: mplbruno/apiadminubu	
         ports:
-        - containerPort: 5001
+        - containerPort: 5000
         env: 
         - name: ASPNETCORE_URLS
-          value: http://*:5001
+          value: http://*:5000
   selector:
     matchLabels:
         app: api-laboratorio
